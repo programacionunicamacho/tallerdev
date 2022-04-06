@@ -20,6 +20,7 @@
             <th>Opciones</th>
          </thead>
          <tbody>
+            <!--Prueba -->
          @foreach($persona as $per)
             <tr>
                <td>{{ $per->id }}</td>
