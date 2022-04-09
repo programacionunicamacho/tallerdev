@@ -34,7 +34,7 @@
     <div class="col-lg-4 col-md-9 col-sm-6 col-xs-12">
         <div class="form-group">
             <label for="apellido">Apellidos</label>
-            <input type="text" name="apellido" id="apeliido" class="form-control" placeholder="Apellidos Completos">
+            <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Apellidos Completos">
         </div>
     </div>
     <div class="col-lg-4 col-md-9 col-sm-6 col-xs-12">

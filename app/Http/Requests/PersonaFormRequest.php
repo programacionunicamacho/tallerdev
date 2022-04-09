@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+
 use Illuminate\Foundation\Http\FormRequest;
 
 class PersonaFormRequest extends FormRequest
@@ -13,7 +14,7 @@ class PersonaFormRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +25,22 @@ class PersonaFormRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            
+            'documento_identidad' => 'required',
+            'nombre' => 'required',
+            'email'=>'email',            
+
         ];
     }
+
+    public function messages()
+    {
+       return [
+           'documento_identidad.required' => 'El documento es un campo requerido',
+           'nombre.required' => 'El nombre debe ser un campo requerido',
+           'email.email' => 'El correo debe tener un formato correcto',
+       ];
+   }    
+    
+
 }

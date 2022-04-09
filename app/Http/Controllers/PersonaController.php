@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Persona; 
 use Illuminate\Support\Facades\Redirect;
-
+use App\Http\Requests\PersonaFormRequest;
 
 
 class PersonaController extends Controller
@@ -40,7 +40,7 @@ class PersonaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PersonaFormRequest $request)
     {
         $personas=new Persona;
         $personas->documento_identidad=$request->get('documento_identidad');
