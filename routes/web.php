@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 //ruta de tipo resource
 Route::resource('persona', 'App\http\Controllers\PersonaController');
+Route::resource('asignaciond','App\http\Controllers\AsignaciondocenteController');
+
 

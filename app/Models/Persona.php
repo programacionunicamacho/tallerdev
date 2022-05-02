@@ -13,4 +13,10 @@ class Persona extends Model
     protected $fillable = ['documento_identidad','nombre','apellido','email','telefono'];
   
 
+    public function asignaciondocente()
+    {
+         return $this->hasMany('App\Models\Asignaciondocente');
+    }   
+  
+
 }
